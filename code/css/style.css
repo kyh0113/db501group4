@@ -9,17 +9,19 @@
     text-align: center;
   }
 
-.intro_bg{
-  background-image: url("../img/eyelashshop.jpg");
-  width: 1000px;
-  height: 680px;
-  vertical-align: middle;
-  text-align: center;
-
+.header{
+  background: skyblue;
+  padding: 20px;
 }
 
-.header{
-  width: auto;
-  margin:auto;
-  background: skyblue;
+.intro_bg{
+  background-image: url("../img/eyelashshop.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position : absolute;
+  left : 50%;
+  right:50%;
+  margin : -250px -360px;
+  margin-top:50px;
 }

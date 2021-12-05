@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script type=text/javascript src="js/c-login.js"></script>
+        <script src="js/c-login.js"></script>
+        <link href ="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/c-login.css">
-        customer
     </head>
-
+    
     <body>
+        <div class='header'>
+            <h1>CUSTOMER</h1>
+        </div> 
 
-    </body>
+        <div class='wrapper'>
+            <section class="c-login">
+                <form action="">
+                    <div class="int-area">
+                        <label for="id"><h3>ID</h3></label>
+                        <input type="text" placeholder="Enter ID" id="c_id" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="Password"><h3>Password</h3></label>
+                        <input type="password" placeholder="Enter password" id="c_pw" required>
+                    </div>
+
+                    <div class="bnt-area">
+                        <br>
+                        <button type="submit" onclick="login()">Login</button>
+                        <button type="button" onclick="history.back()">Cancel</button>
+                    </div>
+                </form>
+                <div class="caption">
+                    <br>
+                    <p>Not a member yet? please <a href="c-signup.html" style="color:dodgerblue">sign up</a>!</p>
+                </div>
+            </section>
+        </div>
+            
+                    
 </html>

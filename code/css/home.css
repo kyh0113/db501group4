@@ -20,7 +20,7 @@ width: 700px; /*사진 가로길이가 700px임 즉 전체를 보이겠다는 �
 height: 505px; /*사진 세로길이가 505px임 즉 전체를 보이겠다는 말 근데 100%로 하는건 왜 안되는지 모르겠음*/
 background-repeat: no-repeat;
 margin : auto;
-margin-top: 30px;
+margin-top: 50px;
 }
 
 div.button

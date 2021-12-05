@@ -1,0 +1,40 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration:none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:black;
+    box-sizing:border-box;
+  }
+
+.header{
+    background: skyblue;
+    padding: 20px;
+    text-align: center;
+    }
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:200px;
+}
+
+.int-area{
+    width: 400px;
+    margin-top:20px;
+}
+
+.int-area input{
+    width: 100%;
+    padding:20px 10px 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #999;
+    font-size:18px;
+    color:black;
+    outline:none;
+}
+

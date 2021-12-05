@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="js/c-signup.js"></script>
+        <link href ="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/c-signup.css">
+    </head>
+
+    <body>
+        <div class='header'>
+            <h1>CUSTOMER</h1>
+        </div> 
+
+        <div class='wrapper'>
+            <section class="c-signup">
+                <form action="">
+                    <div class="int-area">
+                        <label for="name"><p>Name</p></label>
+                        <input type="text" id="c_name" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="id"><p>ID</p></label>
+                        <input type="text" id="c_id" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="Password"><p>Password</p></label>
+                        <input type="password" type="password" id="c_pw" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="Password"><p>Repeat Password</p></label>
+                        <input type="password" type="password" id="c_repeatpw" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="Birth"><p>Birth</p></label>
+                        <input type="text" placeholder="YYYYMMDD" id="c_birth" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="Phonenumber"><p>Phonenumber</p></label>
+                        <input type="text" placeholder="010-0000-0000" id="c_phonenumber" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="Address"><p>Address</p></label>
+                        <input type="text" placeholder="시" id="c_address_si" required>
+                    </div>
+
+                    <div class="int-area">
+                        <label for="Address"><p>Address</p></label>
+                        <input type="text" placeholder="구/읍" id="c_address_gu" required>
+                    </div>
+
+                    <div class="bnt-area">
+                        <br>
+                        <button type="submit" onclick="signup()">Submit</button>
+                        <button type="button" onclick="history.back()">Cancel</button>
+                        
+                    </div>
+
+                </form>
+            </section>
+        </div>
+            
+</html>

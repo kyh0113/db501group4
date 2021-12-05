@@ -4,15 +4,27 @@
     <link href ="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
   </head>
-
+  
   <body>
 
     <div class='header'>
-      <h1>Eyelash shop reservation management system 
-    </div>
+      <h1>Eyelash shop reservation management system </h1>
+    </div> <!-- 하늘색 헤더 -->
 
     <div class="intro_bg">
-    </div>
+    </div> <!-- 배경 이미지 -->
+
+    <div class ="button">
+      <input type="button"   class="button1"
+            value="customer"  
+            onclick="location.href='<%=request.getContextPath() %>/member/memberUpdate?userid=${member.memberid }'" >
+            <input type="button"   class="button2"
+            value="eyelash shop"
+            onclick="location.href='<%=request.getContextPath() %>/member/memberDelete?userid=${member.memberid }'" >      
+      
+    </div> 
+     
 
   </body>
 </html>
+

@@ -16,8 +16,8 @@ padding: 20px;
 
 .intro_bg{
 background-image: url("../img/eyelashshop.jpg"); 
-width: 500px;
-height: 640px;
+width: 650px;
+height: 500px;
 background-repeat: no-repeat;
 margin : auto;
 }
@@ -28,4 +28,20 @@ div.button
  width: 50%;
  left :150%;
  right:150%;
+}
+
+.button{
+  padding:100px;
+}
+
+.button1{
+  width:130px;
+  height:50px;
+  margin-right:50px;
+}
+
+.button2{
+  width:130px;
+  height:50px;
+  margin-left:50px;
 }

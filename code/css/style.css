@@ -1,39 +1,31 @@
 *{
-    font-family: 'Noto Sans KR', sans-serif;
-    list-style: none;
-    text-decoration:none;
-    border-collapse: collapse;
-    margin:0px;
-    padding:0px;
-    color:black;
-    text-align: center;
-  }
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration:none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color:black;
+  text-align: center;
+}
 
 .header{
-  background: skyblue;
-  padding: 20px;
+background: skyblue;
+padding: 20px;
 }
 
 .intro_bg{
-  background-image: url("../img/eyelashshop.jpg");
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  position : absolute;
-  left : 50%;
-  right:50%;
-  margin : -250px -320px;
-  margin-top:50px;
-}
-
-.from{
-  margin-top:500px;
+background-image: url("../img/eyelashshop.jpg"); 
+width: 500px;
+height: 640px;
+background-repeat: no-repeat;
+margin : auto;
 }
 
 div.button
 {
-   margin: auto;
-   width: 50%;
-   left :350%;
-   right:350%;
+ margin: auto;
+ width: 50%;
+ left :150%;
+ right:150%;
 }

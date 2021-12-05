@@ -5,5 +5,21 @@
     border-collapse: collapse;
     margin:0px;
     padding:0px;
-    color: black;
+    color:black;
+    text-align: center;
   }
+
+.intro_bg{
+  background-image: url("../img/eyelashshop.jpg");
+  width: 1000px;
+  height: 680px;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.header{
+  width: auto;
+  margin:auto;
+  background: skyblue;
+}

@@ -1,8 +1,17 @@
+drop table Reservation;
+drop table Teacher;
+drop table Price;
+drop table Eyelash_shop;
+drop table Customer;
+
+
 create table Customer(
 	c_id varchar2(20) not null,
 	c_pw varchar2(20),
+	c_repeatpw varchar2(20),
 	c_phonenumber varchar2(20),
-	c_address varchar2(50),
+	c_address_si varchar2(20),
+	c_address_gu varchar2(20),
 	c_birth varchar2(20),
 	c_name varchar2(20),
 	constraint Customer_c_id_pk primary key(c_id)
@@ -11,8 +20,11 @@ create table Customer(
 create table Eyelash_shop(
 	s_id varchar2(20) not null,
 	s_pw varchar2(20),
+	s_repeatpw varchar2(20),
 	s_name varchar2(20),
-	s_address varchar2(50),
+	s_address_si varchar2(20),
+	s_address_gu varchar2(20),
+	s_address_detail varchar2(50),
 	s_shopnumber varchar2(20),
 	constraint Eyelash_shop_s_id_pk primary key(s_id)
 );

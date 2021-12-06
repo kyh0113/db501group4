@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link href ="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/c-mypage.css">
+
+    </head>
+    <body>
+        <div class="header">
+            <div calss="main_bg">
+                <div class="main_text">
+                    <h1>customer</h1>
+                </div>
+                <div class="main_header">
+                    <ul class="nav">
+                        <li><a href="c-home.html">Home</a></li>
+                        <li><a href="c-mypage.html">My page</a></li>
+                        <li><a href="home.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="txt">
+            <h2>PROFILE SETTINGS</h2>
+        </div>
+        <div class="wrap">
+            <div class="area">
+                <label for="name"><p><b>Name</b></p></label>
+                <input type="text" id="c_name" required>
+            </div>
+
+            <div class="area">
+                <label for="id"><p><b>ID</b></p></label>
+                <input type="text" id="c_id" required>
+            </div>
+
+            <div class="area">
+                <label for="Password"><p><b>PW</b></p></label>
+                <input type="text" id="c_pw" required>
+            </div>
+
+            <div class="area">
+                <label for="Birth"><p><b>Birth</b></p></label>
+                <input type="text" id="c_birth" required>
+            </div>
+
+            <div class="area">
+                <label for="Phonenumber"><p><b>Phonenumber</b></p></label>
+                <input type="text" id="c_phonenumber" required>
+            </div>
+
+            <div class="area">
+                <label for="Address"><p><b>Address</b></p></label>
+                <input type="text" id="c_address_gu">
+                <input type="text" id="c_address_si" required>
+            </div>
+
+            <div class="bnt">
+                <br><br>
+                <input type="button" value="Submit" onclick=""> <!--수정 필요-->
+                <input type="button" value="Cancel" onclick="history.back()">
+                
+            </div>
+        </div>
+    </body>
+</html>

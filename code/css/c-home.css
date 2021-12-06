@@ -17,7 +17,7 @@
   
   .main_header{
     margin:auto;
-    background: rgb(209, 229, 245);
+    background: skyblue;
     height:40px;
   }
   
@@ -30,4 +30,27 @@
   .nav > li{
     margin-left:35px;
     margin-right:35px;
+  }
+
+  .info{
+    /*배경색 구간 확인 예시*/
+    background-color: tomato;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .info > h3{
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .res{
+    background-color: thistle;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .res > h3{
+    margin-top: 20px;
+    text-align: left;
   }

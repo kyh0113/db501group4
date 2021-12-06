@@ -17,7 +17,7 @@
   
 .main_header{
     margin:auto;
-    background: skyblue;
+    background: lavender;
     height:40px;
   }
   
@@ -56,20 +56,25 @@
     border-bottom: 1px solid #999;
     font-size:18px;
     outline:none;
+    display: inline-block;
+}
+
+.bnt{
+    margin-bottom: 50px;
 }
 
 .bnt1{
-  background-color: skyblue;
-  width:70px;
-  height:30px;
-  border: 0;
-  border-radius: 5px;
+    background-color: lavender;
+    width:70px;
+    height:30px;
+    border: 0;
+    border-radius: 5px;
 }
 
 .bnt2{
-  background-color: rgb(228, 228, 228);
-  width:70px;
-  height:30px;
-  border: 0;
-  border-radius: 5px;
+    background-color: rgb(228, 228, 228);
+    width:70px;
+    height:30px;
+    border: 0;
+    border-radius: 5px;
 }

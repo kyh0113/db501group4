@@ -11,7 +11,6 @@
 
 .header{
     background: skyblue;
-    padding: 20px;
     text-align: center;
     }
 
@@ -19,12 +18,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top:50px;
+        margin-top:40px;
     }
 
 .int-area{
         width: 400px;
-        margin-top:20px;
+        margin-top:10px;
     }
     
 .int-area input{
@@ -36,4 +35,20 @@
         font-size:18px;
         color:black;
         outline:none;
+    }
+
+.bnt1{
+        background-color: skyblue;
+        width:70px;
+        height:30px;
+        border: 0;
+        border-radius: 5px;
+    }
+      
+.bnt2{
+        background-color: rgb(228, 228, 228);
+        width:70px;
+        height:30px;
+        border: 0;
+        border-radius: 5px;
     }

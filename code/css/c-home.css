@@ -1,56 +1,60 @@
 *{
-    font-family: 'Noto Sans KR', sans-serif;
-    list-style: none;
-    text-decoration:none;
-    border-collapse: collapse;
-    margin:0px;
-    padding:0px;
-    color:black;
-    text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration:none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color:black;
+}
+
+.header{
+  text-align: center;
   }
+
+.main_text{
+      text-align: center;
+      margin:auto;
+      padding: 10px;
+      margin-top:10px;
+    }
+    
+.main_header{
+      margin:auto;
+      background: skyblue;
+      height:40px;
+    }
   
-  .main_text{
-    margin:auto;
-    padding: 10px;
-    margin-top:20px;
-  }
-  
-  .main_header{
-    margin:auto;
-    background: skyblue;
-    height:40px;
-  }
-  
-  .nav{
+.nav{
     display:flex;
     line-height:40px;
     justify-content:center;
   }
   
-  .nav > li{
+.nav > li{
     margin-left:35px;
     margin-right:35px;
   }
 
-  .info{
+.info{
     /*배경색 구간 확인 예시*/
     background-color: tomato;
     padding: 20px;
     text-align: left;
   }
 
-  .info > h3{
+.info > h3{
     margin-top: 20px;
     text-align: left;
   }
 
-  .res{
+.res{
     background-color: thistle;
     padding: 20px;
     text-align: left;
   }
 
-  .res > h3{
+.res > h3{
     margin-top: 20px;
     text-align: left;
   }

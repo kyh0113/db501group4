@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="js/c-signup.js"></script>
+        <script src="../js/c-signup.js"></script>
         <link href ="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/c-signup.css">
     </head>
@@ -53,16 +53,18 @@
                         <label for="Address"><p>Address</p></label>
                         <input type="text" placeholder="구/읍" id="c_address_gu" required>
                     </div>
+                    
 
-                    <div class="bnt-area">
-                        <br>
-                        <button type="submit" onclick="signup()">Submit</button>
-                        <button type="button" onclick="history.back()">Cancel</button>
+
+                    <div class="bnt">
+                        <br><br>
+                        <input type="button" class="bnt1" value="Submit" onclick="signup()"> <!--수정 필요-->
+                        <input type="button" class="bnt2" value="Cancel" onclick="history.back()">
                         
                     </div>
 
                 </form>
             </section>
         </div>
-            
+    </body>       
 </html>

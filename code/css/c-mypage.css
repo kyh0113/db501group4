@@ -1,83 +1,90 @@
 *{
-    font-family: 'Noto Sans KR', sans-serif;
-    list-style: none;
-    text-decoration:none;
-    border-collapse: collapse;
-    margin:0px;
-    padding:0px;
-    color:black;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration:none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color:black;
+}
+
+.header{
+  text-align: center;
   }
-  
+
 .main_text{
-    text-align: center;
-    margin:auto;
-    padding: 10px;
-    margin-top:20px;
-  }
-  
+      text-align: center;
+      margin:auto;
+      padding: 10px;
+      margin-top:10px;
+    }
+    
 .main_header{
-    margin:auto;
-    background: skyblue;
-    height:40px;
-  }
-  
+      margin:auto;
+      background: skyblue;
+      height:40px;
+    }
+    
 .nav{
-    display:flex;
-    line-height:40px;
-    justify-content:center;
+      display:flex;
+      line-height:40px;
+      justify-content:center;
+    }
+    
+.nav > li{
+      margin-left:35px;
+      margin-right:35px;
+    }
+  
+.txt{
+      text-align: center;
+      margin-top: 30px;
   }
   
-.nav > li{
-    margin-left:35px;
-    margin-right:35px;
+  
+.wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:40px;
   }
 
-.txt{
-    text-align: center;
-    margin-top: 40px;
-}
-
-
-.wrap{
-    justify-content: center;
-    margin-top:30px;
-    display: grid;
-}
-
-.area{
-    width: 450px;
-    margin-top:20px;
-}
-
-.area input{
-    width: 100%;
-    padding:3px;
-    border:none;
-    border-bottom: 1px solid #999;
-    font-size:18px;
-    outline:none;
-}
+.int-area{
+      width: 400px;
+      margin-top:10px;
+  }
+  
+.int-area input{
+      width: 100%;
+      padding:5px 5px 5px;
+      background-color: transparent;
+      border:none;
+      border-bottom: 1px solid #999;
+      font-size:18px;
+      color:black;
+      outline:none;
+  }
 
 .bnt1{
-  background-color: skyblue;
-  width:70px;
-  height:30px;
-  border: 0;
-  border-radius: 5px;
-}
-
+      background-color: skyblue;
+      width:70px;
+      height:30px;
+      border: 0;
+      border-radius: 5px;
+  }
+    
 .bnt1:hover{
-  background-color: rgb(61, 187, 233);
-}
-
+      background-color: rgb(105, 192, 226);
+  }
+  
 .bnt2{
-  background-color: rgb(228, 228, 228);
-  width:70px;
-  height:30px;
-  border: 0;
-  border-radius: 5px;
-}
+      background-color: rgb(228, 228, 228);
+      width:70px;
+      height:30px;
+      border: 0;
+      border-radius: 5px;
+  }
 
 .bnt2:hover{
-  background-color: rgb(204, 201, 201);
-}
+      background-color: rgb(204, 201, 201);
+  }

@@ -42,7 +42,7 @@ function signup() {
   var json = new Object();
   json.c_name = document.getElementById("c_name").value;
   json.c_id = document.getElementById("c_id").value;
-  json.c_pw = document.getElementById("c_pw").value;
+  json.c_pw = document.getElementById("c_password").value;
   json.c_birth = document.getElementById("c_birth").value;
   json.c_phonenumber = document.getElementById("c_phonenumber").value;
   json.c_address_si = document.getElementById("c_address_si").value;
@@ -92,3 +92,6 @@ function checkedValue(name) {
   }
   return "";
 }
+
+
+

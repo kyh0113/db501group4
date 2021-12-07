@@ -7,7 +7,7 @@ const URL_C_HAIRDRESSER = "php/c_hairdresser.php";
 const URL_C_RESERVATION_CANCEL = "php/c_reservation_cancel.php"
 const SUCCESS = 0;
 
-var Customer;
+var cCustomer;
 var cHome;
 var nearSalons
 var myReservations;
@@ -15,8 +15,8 @@ var myReservations;
 function setItems() {
   var item = sessionStorage.getItem("customer");
   if(item != null) {
-    Customer = JSON.parse(item);
-    document.getElementById("customer_name").innerHTML = "<h2><b>" + Customer.c_name + "'s HOME</b></h2>";
+    cCustomer = JSON.parse(item);
+    document.getElementById("customer_name").innerHTML = "<h2><b>" + cCustomer.c_name + "'s HOME</b></h2>";
   }
   else {
     location.assign(LOC_LOGIN);
@@ -145,8 +145,8 @@ function confirmCancelReservation(r_id) {
 
 function refresh() {
   var body = new Object();
-  body.c_id = Customer.c_id;
-  body.c_pw = Customer.c_pw;
+  body.c_id = cCustomer.c_id;
+  body.c_pw = cCustomer.c_pw;
 
   var http = new XMLHttpRequest();
   http.onreadystatechange = function() {

@@ -35,7 +35,7 @@ function login() {
       if(json.result == SUCCESS) {
         console.log("Log In Success!!");
         sessionStorage.setItem("customer", JSON.stringify(json.customer));
-        sessionStorage.setItem("nearSalons", JSON.stringify(json.nearSalons));
+        sessionStorage.setItem("nearShops", JSON.stringify(json.nearShops));
         sessionStorage.setItem("myReservations", JSON.stringify(json.myReservations));
         location.assign(LOC_C_HOME);
       }

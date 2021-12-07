@@ -1,15 +1,15 @@
-const LOC_NEXT = "c-hairdresser.html";
+const LOC_NEXT = "c-teacher.html";
 const LOC_LOGIN = "c-login.html";
 const LOC_C_HOME = "c-home.html";
 
 const URL_LOGIN = "php/c_login.php";
-const URL_C_HAIRDRESSER = "php/c_hairdresser.php";
+const URL_C_HAIRDRESSER = "php/c_teacher.php";
 const URL_C_RESERVATION_CANCEL = "php/c_reservation_cancel.php"
 const SUCCESS = 0;
 
 var Customer;
 var cHome;
-var nearSalons
+var nearShops
 var myReservations;
 
 function setItems() {
@@ -22,10 +22,10 @@ function setItems() {
     location.assign(LOC_LOGIN);
   }
 
-  item = sessionStorage.getItem("nearSalons");
+  item = sessionStorage.getItem("nearShops");
   if(item != null) {
-    nearSalons = JSON.parse(item);
-    showNearSalons();
+    nearShops = JSON.parse(item);
+    showNearShops();
   }
   else {
     location.assign(LOC_LOGIN);
@@ -40,7 +40,7 @@ function setItems() {
   }
 }
 
-function showNearSalons() {
+function showNearShops() {
 
    var buff = '<table class="w3-table w3-bordered w3-striped w3-border test w3-hoverable">';
    buff += '<tr class="w3-black">';
@@ -48,15 +48,15 @@ function showNearSalons() {
    buff += '<th>PHONENUMBER</th>';
    buff += '<th>ADDRESS</th></tr>';
 
-   for (nearsalon of nearSalons) {
-      buff += '<tr onclick=goToHairdresser("'+nearsalon.s_id+'")>';
-      buff += '<td>' + nearsalon.s_name + '</td>';
-      buff += '<td>' + nearsalon.s_phonenumber + '</td>';
-      buff += '<td>' + nearsalon.s_address_si+ ' ' + nearsalon.s_address_gu + ' ' + nearsalon.s_address_detail+'</td></tr>';
+   for (nearShop of nearShops) {
+      buff += '<tr onclick=goToHairdresser("'+nearshop.s_id+'")>';
+      buff += '<td>' + nearshops.s_name + '</td>';
+      buff += '<td>' + nearshop.s_phonenumber + '</td>';
+      buff += '<td>' + nearshop.s_address_si+ ' ' + nearshop.s_address_gu + ' ' + nearshop.s_address_detail+'</td></tr>';
    }
    buff += '</table>';
 
-   document.getElementById("near_salons").innerHTML = buff; 
+   document.getElementById("near_shops").innerHTML = buff; 
 }
 
 function showMyReservation() {
@@ -74,7 +74,7 @@ function showMyReservation() {
       buff += '<tr>';
       buff += '<td>' + myreservation.s_name + '</td>';
       buff += '<td>' + myreservation.s_address_si + ' ' + myreservation.s_address_gu + ' ' + myreservation.s_address_detail + '</td>';
-      buff += '<td>' + myreservation.h_name + '</td>';
+      buff += '<td>' + myreservation.t_name + '</td>';
       buff += '<td>' + myreservation.r_date + '</td>';
       buff += '<td>' + myreservation.r_time + '</td>';
       buff += '<td><button class="w3-button w3-grey" type="submit" onclick=confirmCancelReservation("'+myreservation.r_id+'")>CANCEL</button></td></tr>';
@@ -155,7 +155,7 @@ function refresh() {
       if(json.result == SUCCESS) {
         console.log("Refresh Success!!");
         sessionStorage.setItem("customer", JSON.stringify(json.customer));
-        sessionStorage.setItem("nearSalons", JSON.stringify(json.nearSalons));
+        sessionStorage.setItem("nearShops", JSON.stringify(json.nearShops));
         sessionStorage.setItem("myReservations", JSON.stringify(json.myReservations));
         setItems();
       }

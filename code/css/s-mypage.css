@@ -1,80 +1,85 @@
 *{
-    font-family: 'Noto Sans KR', sans-serif;
-    list-style: none;
-    text-decoration:none;
-    border-collapse: collapse;
-    margin:0px;
-    padding:0px;
-    color:black;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration:none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color:black;
+}
+
+.header{
+  text-align: center;
   }
-  
+
 .main_text{
-    text-align: center;
-    margin:auto;
-    padding: 10px;
-    margin-top:20px;
-  }
-  
+      text-align: center;
+      margin:auto;
+      padding: 10px;
+      margin-top:10px;
+    }
+    
 .main_header{
-    margin:auto;
-    background: lavender;
-    height:40px;
-  }
-  
+      margin:auto;
+      background: lavender;
+      height:40px;
+    }
+    
 .nav{
-    display:flex;
-    line-height:40px;
-    justify-content:center;
+      display:flex;
+      line-height:40px;
+      justify-content:center;
+    }
+    
+.nav > li{
+      margin-left:35px;
+      margin-right:35px;
+    }
+  
+.txt{
+      text-align: center;
+      margin-top: 30px;
   }
   
-.nav > li{
-    margin-left:35px;
-    margin-right:35px;
-  }
-
-.txt{
-    text-align: center;
-    margin-top: 40px;
-}
 
 
-.wrap{
+.wrapper{
+    display: flex;
     justify-content: center;
-    margin-top:30px;
-    display: grid;
+    align-items: center;
+    margin-top:40px;
 }
 
-.area{
-    width: 450px;
-    margin-top:20px;
+.int-area{
+    width: 400px;
+    margin-top:10px;
 }
 
-.area input{
+.int-area input{
     width: 100%;
-    padding:3px;
+    padding:5px 5px 5px;
+    background-color: transparent;
     border:none;
     border-bottom: 1px solid #999;
     font-size:18px;
+    color:black;
     outline:none;
-    display: inline-block;
-}
-
-.bnt{
-    margin-bottom: 50px;
 }
 
 .bnt1{
-    background-color: lavender;
-    width:70px;
-    height:30px;
-    border: 0;
-    border-radius: 5px;
-}
-
+      background-color: skyblue;
+      width:70px;
+      height:30px;
+      border: 0;
+      border-radius: 5px;
+  }
+    
 .bnt2{
-    background-color: rgb(228, 228, 228);
-    width:70px;
-    height:30px;
-    border: 0;
-    border-radius: 5px;
-}
+      background-color: rgb(228, 228, 228);
+      width:70px;
+      height:30px;
+      border: 0;
+      border-radius: 5px;
+  } 
+
+  

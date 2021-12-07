@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <script src=""></script>
+        <script src="../js/c-mypage.js"></script>
         <link href ="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/c-mypage.css">
 
     </head>
     <body>
-        <div class="header">
-            <div calss="main_bg">
-                <div class="main_text">
-                    <h1>Customer</h1>
-                </div>
-                <div class="main_header">
-                    <ul class="nav">
-                        <li><a href="c-home.html">Home</a></li>
-                        <li><a href="c-mypage.html">My page</a></li>
-                        <li><a href="home.html">Logout</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class='header'>
+            <h1>CUSTOMER</h1>
+        </div> 
+        <div class="main_header">
+            <ul class="nav">
+                <li><a href="c-home.html">Home</a></li>
+                <li><a href="c-mypage.html">My page</a></li>
+                <li><a href="home.html">Logout</a></li>
+            </ul>
         </div>
 
         <div class="txt">
             <h2>PROFILE SETTINGS</h2>
         </div>
+    
+        <div class='wrapper'>
+            <section class="c-mypage">
+                <form action="">
+                    <div class="int-area">
+                        <label for="name"><p>Name</p></label>
+                        <input type="text" id="c_name" required>
+                    </div>
 
-        <!--input 수정 필요-->
-        <div class="wrap">
-            <div class="area">
-                <label for="name"><p><b>Name</b></p></label>
-                <input type="text" id="c_name" required>
-            </div>
+                    <div class="int-area">
+                        <label for="id"><p>ID</p></label>
+                        <input type="text" id="c_id" required>
+                    </div>
 
-            <div class="area">
-                <label for="id"><p><b>ID</b></p></label>
-                <input type="text" id="c_id" required>
-            </div>
+                    <div class="int-area">
+                        <label for="Password"><p>Password</p></label>
+                        <input type="password" type="password" id="c_pw" required>
+                    </div>
 
-            <div class="area">
-                <label for="Password"><p><b>PW</b></p></label>
-                <input type="text" id="c_pw" required>
-            </div>
+                    <div class="int-area">
+                        <label for="Password"><p>Repeat Password</p></label>
+                        <input type="password" type="password" id="c_repeatpw" required>
+                    </div>
 
-            <div class="area">
-                <label for="Birth"><p><b>Birth</b></p></label>
-                <input type="text" id="c_birth" required>
-            </div>
+                    <div class="int-area">
+                        <label for="Birth"><p>Birth</p></label>
+                        <input type="text" placeholder="YYYYMMDD" id="c_birth" required>
+                    </div>
 
-            <div class="area">
-                <label for="Phonenumber"><p><b>Phonenumber</b></p></label>
-                <input type="text" id="c_phonenumber" required>
-            </div>
+                    <div class="int-area">
+                        <label for="Phonenumber"><p>Phonenumber</p></label>
+                        <input type="text" placeholder="010-0000-0000" id="c_phonenumber" required>
+                    </div>
 
-            <div class="area">
-                <label for="Address"><p><b>Address</b></p></label>
-                <input type="text" id="c_address_si" required>
-                <input type="text" id="c_address_gu" required>
-            </div>
+                    <div class="int-area">
+                        <label for="Address"><p>Address</p></label>
+                        <input type="text" placeholder="시" id="c_address_si" required>
+                    </div>
 
-            <div class="bnt">
-                <br><br>
-                <input type="button" class="bnt1" value="Submit" onclick=""> <!--수정 필요-->
-                <input type="button" class="bnt2" value="Cancel" onclick="history.back()">
-                
-            </div>
+                    <div class="int-area">
+                        <label for="Address"><p>Address</p></label>
+                        <input type="text" placeholder="구/읍" id="c_address_gu" required>
+                    </div>
+                    
+
+
+                    <div class="bnt">
+                        <br><br>
+                        <input type="button" class="bnt1" value="Submit" onclick="profile()"> 
+                        <input type="button" class="bnt2" value="Cancel" onclick="history.back()">
+                        
+                    </div>
+                    
+                </form>
+            </section>
         </div>
-    </body>
+    </body>        
 </html>

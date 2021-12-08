@@ -95,5 +95,3 @@ function refresh() {
   http.setRequestHeader("Content-Type", "application/json");
   http.send(JSON.stringify(body));
 }
-
-

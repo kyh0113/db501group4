@@ -8,10 +8,10 @@ try{
 	$stmt = oci_parse($conn, $sql);
 	oci_execute($stmt);
 
-	$salons = array();
+	$shops = array();
 	$index = 0;
 	while ($row=oci_fetch_row($stmt)) {
-		$salons[$index]->s_id = $row[0];
+		$shops[$index]->s_id = $row[0];
 		$index++;
 	}
 	if ($index==1){

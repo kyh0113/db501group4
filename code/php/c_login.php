@@ -8,7 +8,7 @@ $repeatpw = $request["c_repeatpw"];
 try{ 
         $conn = oci_connect("db501group4", "test1234", "203.249.87.57:1521/orcl");	//db접속
 
- $sql = "select c_id,c_pw, c_repeatpw, c_repeatpw, c_name,c_address_si,c_address_gu,c_phonenumber,c_birth
+ $sql = "select c_id,c_pw, c_repeatpw, c_name,c_address_si,c_address_gu,c_phonenumber,c_birth
          from customer where c_id='".$id."' and c_pw='".$pw."' and c_repeatpw = '".$repeatpw."';
  $stmt = oci_parse($conn, $sql);
  oci_execute($stmt);

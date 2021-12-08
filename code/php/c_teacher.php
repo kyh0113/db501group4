@@ -15,7 +15,6 @@ try{
  while ($row=oci_fetch_row($stmt)) {
   $teacher[$index]->t_id = $row[0];
   $teacher[$index]->t_name = $row[1];
-  $teacher[$index]->s_id = $row[2];
   $index++;
  }
  if ($index==0){
@@ -30,10 +29,10 @@ try{
          from eyelash_shop where s_id='".$id."'";
  $stmt = oci_parse($conn, $sql);
  oci_execute($stmt);
- $salons = array();
+ $shops = array();
  $index = 0;
  while ($row=oci_fetch_row($stmt)) {
-  $salons[$index]->s_name = $row[0];
+  $shops[$index]->s_name = $row[0];
   $index++;
  }
  if ($index==0){

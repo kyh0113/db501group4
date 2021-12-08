@@ -43,11 +43,6 @@ try{
     $stmt = oci_parse($conn, $sql);
 	oci_execute($stmt);
 
-	$sql = "insert into hairdresser (t_id, s_id, t_name)
-	    values (t_seq.NEXTVAL, '".$s_id."', '".$t_name_3."')";
-    $stmt = oci_parse($conn, $sql);
-	oci_execute($stmt);
-
 
     $sql = "insert into price (s_id, perm, extension, care)
 	    values ('".$s_id."', '".$perm."', '".$extension."', '".$care."')";

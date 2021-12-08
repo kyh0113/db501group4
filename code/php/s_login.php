@@ -106,7 +106,6 @@ try{
  $response->eyelash_shop = $eyelash_shop[0];
  $response->teacher1 = $teacher[0];
  $response->teacher2 = $teacher[1];
- $response->teacher3 = $teacher[2];
  $response->price = $prices[0];
  $response->todayReservations = $todayReservations;
  $response->tmrwReservations = $tmrwReservations;

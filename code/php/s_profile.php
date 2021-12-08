@@ -16,9 +16,6 @@ $t_name_1 = $request["t_name_1"];
 $t_id_2 = $request["t_id_2"];
 $t_name_2 = $request["t_name_2"];
 
-$t_id_3 = $request["t_id_3"];
-$t_name_3 = $request["t_name_3"];
-
 
 $perm = $request["perm"];
 $extension = $request["extension"];
@@ -43,12 +40,6 @@ try{
 	$sql = "update teacher
      set t_name='".$t_name_2."'
      where t_id='".$t_id_2."'";
-	$stmt = oci_parse($conn, $sql);
-	oci_execute($stmt);
-
-	$sql = "update teahcer
-     set t_name='".$t_name_3."'
-     where t_id='".$t_id_3."'";
 	$stmt = oci_parse($conn, $sql);
 	oci_execute($stmt);
 

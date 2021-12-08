@@ -23,8 +23,8 @@ function showProfile(){
     Shop = JSON.parse(item);
     document.getElementById("s_name").value = Shop.s_name;
     document.getElementById("s_id").value = Shop.s_id;
-    document.getElementById("s_password").value = Shop.s_pw;
-    document.getElementById("s_phonenumber").value = Shop.s_phonenumber;
+    document.getElementById("s_pw").value = Shop.s_pw;
+    document.getElementById("s_shopnumber").value = Shop.s_shopnumber;
     document.getElementById("s_address_si").value = Shop.s_address_si;
     document.getElementById("s_address_gu").value = Shop.s_address_gu;
     document.getElementById("s_address_detail").value = Shop.s_address_detail;

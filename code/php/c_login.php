@@ -13,7 +13,7 @@ try{
  $stmt = oci_parse($conn, $sql);
  oci_execute($stmt);
 
- $customers = array();
+ $customers = array(); 
  $index = 0;
  while ($row=oci_fetch_row($stmt)) {
   $customers[$index]->c_id = $row[0];
@@ -37,7 +37,7 @@ try{
  $si = $customers[0]->c_address_si;
  $gu = $customers[0]->c_address_gu;
  $sql = "select s_id,s_pw,s_repeatpw,s_name,s_address_si,s_address_gu, s_address_detail, s_shopnumber
-         from salon where s_address_si='".$si."' and s_address_gu='".$gu."' order by s_name ";
+         from eyelash_shop where s_address_si='".$si."' and s_address_gu='".$gu."' order by s_name ";
  $stmt = oci_parse($conn, $sql);
  oci_execute($stmt);
 
@@ -62,8 +62,7 @@ try{
  eyelash_shop.s_address_si, eyelash_shop.s_address_gu, eyelash_shop.s_address_detail,
  t_name, r_id, r_date, r_time from reservation
  inner join teacher on reservation.t_id = teacher.t_id
- inner join eyelash_shop on eyelash_shop.s_id = teacher.s_id where c_id='".$id."'
-  and r_date>='" .$today. "' order by r_date desc ";
+ inner join eyelash_shop on eyelash_shop.s_id = teacher.s_id where c_id='".$id."' order by r_date desc ";
  $stmt = oci_parse($conn, $sql);
  oci_execute($stmt);
  $myReservations = array();

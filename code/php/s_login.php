@@ -70,8 +70,7 @@ try{
  $today = date("Ymd", time());
  $sql = "select c_id,r_style,r_date,r_time from reservation 
  where reservation.t_id in
- (select teacher.t_id from teacher where teacher.s_id='".$id."'
-  and reservation.r_date='".$today."') order by reservation.r_time";
+ (select teacher.t_id from teacher where teacher.s_id='".$id."') order by reservation.r_time";
  $stmt = oci_parse($conn, $sql);
  oci_execute($stmt);
  $todayReservations = array();
@@ -88,8 +87,7 @@ try{
  $tmrw = date("Ymd", strtotime($day." +1 day"));
  $sql = "select c_id,r_style,r_date,r_time from reservation 
  where reservation.t_id in
- (select teacher.t_id from teahcer where teahcer.s_id='".$id."'
-  and reservation.r_date='".$tmrw."') order by reservation.r_time";
+ (select teacher.t_id from teahcer where teahcer.s_id='".$id."') order by reservation.r_time";
  $stmt = oci_parse($conn, $sql);
  oci_execute($stmt);
  $tmrwReservations = array();

@@ -8,7 +8,6 @@ drop table Customer;
 create table Customer(
 	c_id varchar2(20) not null,
 	c_pw varchar2(20),
-	c_repeatpw varchar2(20),
 	c_phonenumber varchar2(20),
 	c_address_si varchar2(20),
 	c_address_gu varchar2(20),
@@ -20,7 +19,6 @@ create table Customer(
 create table Eyelash_shop(
 	s_id varchar2(20) not null,
 	s_pw varchar2(20),
-	s_repeatpw varchar2(20),
 	s_name varchar2(20),
 	s_address_si varchar2(20),
 	s_address_gu varchar2(20),
